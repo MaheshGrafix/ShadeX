@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadeX - Keep Rocking</title>
+    <!-- Use Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100">
+
+    <!-- Header and Navigation -->
+    <header class="sticky top-0 bg-gray-950/80 backdrop-blur-sm z-50 shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo and Brand Name -->
+            <div class="flex items-center space-x-3">
+                <img src="image/logo.jpg" alt="ShadeX Logo" class="w-12 h-12 rounded-full object-cover">
+                <span class="text-3xl font-extrabold tracking-tight text-white">ShadeX</span>
+            </div>
+            
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex space-x-8 text-lg font-semibold">
+                <a href="#home" class="hover:text-amber-400 transition-colors duration-300">Home</a>
+                <a href="#women" class="hover:text-amber-400 transition-colors duration-300">Women's Collection</a>
+                <a href="#men" class="hover:text-amber-400 transition-colors duration-300">Men's Collection</a>
+                <a href="#deals" class="hover:text-amber-400 transition-colors duration-300">Deals</a>
+                <a href="#offers" class="hover:text-amber-400 transition-colors duration-300">Offers</a>
+            </div>
+            
+            <!-- Icons & Login -->
+            <div class="flex items-center space-x-4">
+                <!-- Search Icon -->
+                <button aria-label="Search" class="p-2 rounded-full hover:bg-gray-800 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.3-4.3"/>
+                    </svg>
+                </button>
+                <!-- Scan Icon -->
+                <button aria-label="Scan" class="p-2 rounded-full hover:bg-gray-800 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code">
+                        <rect width="18" height="18" x="3" y="3" rx="2"/>
+                        <path d="M12 7v4h4"/>
+                        <path d="M12 17v-2h-2"/>
+                    </svg>
+                </button>
+                <!-- Liked Icon -->
+                <button aria-label="Liked Items" class="p-2 rounded-full hover:bg-gray-800 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                </button>
+                <!-- Login/Signup Button -->
+                <button class="bg-amber-400 text-gray-950 font-bold py-2 px-4 rounded-full shadow-lg hover:bg-amber-500 transition-colors duration-300">
+                    Log In / Sign Up
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Tagline -->
+    <main class="container mx-auto px-4 mt-16 text-center">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-8 drop-shadow-md">
+            KEEP ROCKING WHEN YOUR SUNGLASSES ARE TALKING
+        </h1>
+
+        <!-- Product Grid Section -->
+        <section id="products" class="py-16">
+            <h2 class="text-4xl font-bold mb-10 text-white">Our Collection</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative">
+                        <img  src="image/shade2.jpg" alt="Classic Aviator Sunglasses" class="w-full h-64 object-cover">
+                        <button class="absolute top-4 right-4 text-white p-2 rounded-full bg-black/50 hover:bg-black transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Classic Aviators</h3>
+                        <p class="text-gray-400 mb-4">Timeless design for a sophisticated look.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-extrabold text-amber-400">₹99.00</span>
+                            <button class="bg-white text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative">
+                        <img src="image/shadeX1.jpg" alt="Sporty Wrap-Around Sunglasses" class="w-full h-64 object-cover">
+                        <button class="absolute top-4 right-4 text-white p-2 rounded-full bg-black/50 hover:bg-black transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Sporty Wrap-Arounds</h3>
+                        <p class="text-gray-400 mb-4">Perfect for your active lifestyle.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-extrabold text-amber-400">₹149.00</span>
+                            <button class="bg-white text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative">
+                        <img src="image/shadeX4.jpg" alt="Stylish Cat-Eye Sunglasses" class="w-full h-64 object-cover">
+                        <button class="absolute top-4 right-4 text-white p-2 rounded-full bg-black/50 hover:bg-black transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Stylish Cat-Eyes</h3>
+                        <p class="text-gray-400 mb-4">Bold and fashionable for any occasion.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-extrabold text-amber-400">₹299.00</span>
+                            <button class="bg-white text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative">
+                        <img src="image/shade599.jpg" alt="Futuristic Shield Sunglasses" class="w-full h-64 object-cover">
+                        <button class="absolute top-4 right-4 text-white p-2 rounded-full bg-black/50 hover:bg-black transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Futuristic Shields</h3>
+                        <p class="text-gray-400 mb-4">Make a statement with a unique look.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-extrabold text-amber-400">₹599.00</span>
+                            <button class="bg-white text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative">
+                        <img src="image/shadeX3.jpg" alt="Oversized Square Sunglasses" class="w-full h-64 object-cover">
+                        <button class="absolute top-4 right-4 text-white p-2 rounded-full bg-black/50 hover:bg-black transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Oversized Squares</h3>
+                        <p class="text-gray-400 mb-4">Ultimate style and UV protection.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-extrabold text-amber-400">₹399.00</span>
+                            <button class="bg-white text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative">
+                        <img src="image/shade199.jpg" alt="Retro Round Sunglasses" class="w-full h-64 object-cover">
+                        <button class="absolute top-4 right-4 text-white p-2 rounded-full bg-black/50 hover:bg-black transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Retro Rounds</h3>
+                        <p class="text-gray-400 mb-4">A classic comeback for a timeless look.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-extrabold text-amber-400">₹199.00</span>
+                            <button class="bg-white text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-16 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="https://www.instagram.com/shadex357?igsh=cjNoMXk4Z255ZjB1" target="_blank" aria-label="ShadeX on Instagram" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 ShadeX. All Rights Reserved.</p>
+            <p class="text-gray-500 text-sm mt-2">Designed with passion for you.</p>
+        </div>
+    </footer>
+</body>
+</html>
